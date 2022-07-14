@@ -12,8 +12,8 @@ pj.o: pgm.c pj.h
 pj.o: histograma.c pj.h
   gcc -o pj.o histograma.c -c -W -Wall -ansi -pedantic
 
-pj.o: lb8bits.c pj.h
-  gcc -o pj.o lbp8bits.c -c -W -Wall -ansi -pedantic
+pj.o: lbp.c pj.h
+  gcc -o pj.o lbp.c -c -W -Wall -ansi -pedantic
 
 clean:
 	rm -rf *.o*~ main
